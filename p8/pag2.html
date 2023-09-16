@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    img{
+        height: 5vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+
+    .h1{
+        margin-top: 15vw;
+        font-size: 3vw;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+    }
+
+    .popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+#openPopup{
+    height: 3vw;
+    width: 8vw;
+    border-radius: 7px;
+    border: none;
+    background-color: red;
+    color: white;
+    font-weight: 900;
+}
+
+.popup-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.close-button:hover {
+    color: red;
+}
+
+    
+</style>
+<body>
+    <a href="index.html"><img src="botao-voltar.png" alt=""></a>
+
+    <div class="h1">
+        <h1>Peça um presentinho e entregue o furiquinho !</h1>
+    </div>
+    <button id="openPopup">Muito Importante !</button>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close-button" id="closePopup">&times;</span>
+            <p>Quando se firma um acordo tem que pagar viu !!!!!!!!!</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
